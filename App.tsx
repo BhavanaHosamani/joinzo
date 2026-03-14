@@ -21,6 +21,12 @@ import { TrackOrderScreen } from './src/screens/TrackOrderScreen';
 import { ProfileScreen } from './src/screens/ProfileScreen';
 import { DiscoverScreen } from './src/screens/DiscoverScreen';
 import { HeatmapScreen } from './src/screens/HeatmapScreen';
+import { RewardScreen } from   './src/screens/RewardScreen ';
+import { ReorderScreen } from './src/screens/ReorderScreen';
+import { TeamBuyScreen } from './src/screens/ TeamBuyScreen';
+import { InviteSearch } from './src/screens/ InviteScreen';
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -44,6 +50,9 @@ const RootNavigator = () => {
                     <Stack.Screen name="Profile" component={ProfileScreen} />
                     <Stack.Screen name="Discover" component={DiscoverScreen} />
                     <Stack.Screen name="Heatmap" component={HeatmapScreen} />
+                    <Stack.Screen name="Reorder" component={ReorderScreen} />
+                    <Stack.Screen name="TeamBuy" component={TeamBuyScreen} />
+                    <Stack.Screen name="Invite" component={InviteScreen} />
                 </>
             ) : (
                 // No session, require login
